@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login Page</title>
+    <link rel="icon" href="login_11140862.png" type="image/x-icon">
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f4f4f4;
+            color: blue;
+            font-weight: 800;
+            font-size: 15px;
+        }
+
+        .container {
+            max-width: 400px;
+            margin: 50px auto;
+            background: #fff;
+            padding: 20px;
+            border-radius: 10px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+            color: green;
+            background-color: cornsilk;
+        }
+
+        input[type="text"],
+        input[type="tel"],
+        input[type="password"],
+        textarea {
+            width: 100%;
+            padding: 10px;
+            margin: 6px 0;
+            display: inline-block;
+            border: 1px solid #ccc;
+            border-radius: 4px;
+            box-sizing: border-box;
+        }
+
+        input[type="submit"] {
+            width: 100%;
+            background-color: brown;
+            color: white;
+            padding: 14px 20px;
+            margin: 8px 0;
+            border: none;
+            border-radius: 4px;
+            cursor: pointer;
+        }
+
+        input[type="submit"]:hover {
+            background-color: #45a049;
+        }
+        #Login{
+            color: brown;
+            font-size: 30px;
+            font-weight: bolder;
+            padding-left: 150px;
+            text-decoration: underline;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container">
+        <h2 id="Login">Login</h2>
+        <form action="#" method="post">
+            <label for="name">Name:</label>
+            <input type="text" id="name" name="name" required placeholder="Name">
+
+            <label for="address">Address:</label>
+            <input type="text" id="address" name="address" required placeholder="Address">
+
+            <label for="location">Location:</label>
+            <input type="text" id="location" name="location" required placeholder="Location">
+
+            <label for="phone">Phone Number:</label>
+            <input type="tel" id="phone" name="phone" pattern="[0-9]{10}" required placeholder="Phone Number">
+
+            <label for="email">Email:</label><br>
+            <input type="email" id="email" name="Email" required placeholder="Email"><br>
+            <br>
+
+            <label for="pet-breed">Pet Breed:</label>
+            <input type="text" id="pet-breed" name="pet-breed" required placeholder="Pet-Breed">
+
+            <label for="pet-age">Pet Age:</label><br>
+            <input type="number" id="pet-age" name="pet-age" required placeholder="Pet Age">
+            <br><br>
+
+            <label for="reason">Why do you need a pet?</label>
+            <textarea id="reason" name="reason" required placeholder="I need Pet because...."></textarea>
+
+            <label for="payment-method">Payment Method:</label><br>
+            <select id="payment-method" name="payment-method" required >
+                <option value="credit-card">Credit Card</option>
+                <option value="Googlepay">GooglePay</option>
+                <option value="bitcoin">Bitcoin</option>
+                <option value="cash">Cash</option>
+            </select>
+            <input type="submit" value="Submit" onclick="solve()">
+        </form>
+    </div>
+<script>
+    function solve(){
+            var userPreference;	 
+			confirm("Thank You for submitting! The owner will contact you soon!")  
+            document.getElementsByClassName("body").innerHTML = userPreference;
+		}
+</script>
+</body>
+
+</html>
